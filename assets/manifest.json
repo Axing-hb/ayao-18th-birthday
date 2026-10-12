@@ -1,0 +1,2232 @@
+{
+  "project": "阿药生日网页",
+  "recipient": {
+    "name": "阿药",
+    "bilibili": "Anria_01017",
+    "space": "https://space.bilibili.com/614351218",
+    "birthday": "10-17",
+    "age": 18,
+    "age_note": "这是她的 18 岁生日（成年礼），文案与蜡烛数量都要体现「18」。",
+    "signature": "你好，我叫阿药。一个成分复杂的intp",
+    "traits": [
+      "二次元",
+      "INTP",
+      "术曲/Vocaloid",
+      "MARETU",
+      "舞萌DX",
+      "动物森友会",
+      "宝可梦",
+      "人森/朋友收集",
+      "养仓鼠（宠物）"
+    ],
+    "favorites": {
+      "acnh_villagers": [
+        "西施惠 Isabelle",
+        "蜜雪儿 Sasha",
+        "史培亚 Fang"
+      ],
+      "pokemon": [
+        "仙子伊布 Sylveon",
+        "鬃岩狼人 Lycanroc",
+        "伊布家族 Eevee 家族"
+      ],
+      "pokemon_generation": "剑盾（第八世代）是她最喜欢的世代"
+    },
+    "pets": {
+      "hamster": "两人一起养的仓鼠，出现在多张私人照片里，是很好的情感切入点"
+    },
+    "personal_note": "B 站头像是表情包动物，不是仓鼠；仓鼠是现实中的宠物，别混淆。"
+  },
+  "constraints": {
+    "dilla_bears_max": 2,
+    "dilla_bears_note": "S1 只出现两只迪拉熊。优先用真实玩偶照片（personal/dilla_plush_big + dilla_plush_small，或直接整张 dilla_plush_pair），官方立绘 dilla_01_base / dilla_07_lime 作为备选，两套不要同时出现。",
+    "dilla_bears_files": [
+      "../assets/personal/dilla_plush_big.webp",
+      "../assets/personal/dilla_plush_small.webp"
+    ],
+    "dilla_bears_fallback": [
+      "../assets/maimai/dilla_01_base.webp",
+      "../assets/maimai/dilla_07_lime.webp"
+    ],
+    "dilla_bears_pair_photo": "../assets/personal/dilla_plush_pair.webp",
+    "personal_photos": {
+      "note": "用户本人提供的私人照片，情感权重最高，不要裁掉主体、不要加过度滤镜。",
+      "us_switch": "../assets/personal/us_switch.webp",
+      "dilla_plush_pair": "../assets/personal/dilla_plush_pair.webp",
+      "hamster_avatar": "../assets/personal/hamster_avatar.webp"
+    },
+    "age": 18,
+    "age_note": "18 岁生日（成年礼）：S2 要 18 根蜡烛，S7 要有 18 岁蜡烛的 3D 蛋糕动画。",
+    "footer_credit": "by Axing",
+    "footer_note": "网页最下端必须出现 by Axing。",
+    "deploy": {
+      "target": "GitHub Pages (github.io)",
+      "three_js": true,
+      "three_js_note": "部署到 github.io 后本来就是联网访问，因此允许使用 Three.js 做 3D 生日蛋糕。推荐用 CDN 引入（如 unpkg / jsdelivr），或本地 vendor 一份。",
+      "base_path_note": "GitHub Pages 项目站点路径形如 https://<user>.github.io/<repo>/，所以 assets 引用要用相对路径 ../assets/...，不要用 /assets/... 这种根路径（会 404）。",
+      "ascii_filenames": true,
+      "ascii_note": "所有素材文件名已改为纯 ASCII，避免 GitHub Pages 的 URL 编码问题。日文原名保留在 manifest 的 title 字段。",
+      "case_sensitive": "GitHub Pages 区分大小写，引用路径必须与文件名大小写完全一致。"
+    },
+    "no_external_network": false,
+    "offline_capable": false,
+    "output": "web/index.html"
+  },
+  "palette": {
+    "--c-bg-deep": "#12102A",
+    "--c-bg-soft": "#1E1B3A",
+    "--c-card": "#FFFDF7",
+    "--c-wood": "#D9A45B",
+    "--c-wood-dark": "#A9762F",
+    "--c-maimai-blue": "#2BB3E8",
+    "--c-maimai-pink": "#F5539E",
+    "--c-maimai-yellow": "#FFD23F",
+    "--c-maretu-red": "#E8202A",
+    "--c-leaf": "#7BC96F",
+    "--c-text": "#2B2740",
+    "--c-text-dim": "#6E6A8A"
+  },
+  "fonts": {
+    "files": [
+      {
+        "path": "../assets/fonts/hachi-maru-pop-400.woff2",
+        "rel": "fonts/hachi-maru-pop-400.woff2",
+        "bytes": 1966028
+      },
+      {
+        "path": "../assets/fonts/mochiy-pop-one-400.woff2",
+        "rel": "fonts/mochiy-pop-one-400.woff2",
+        "bytes": 992600
+      },
+      {
+        "path": "../assets/fonts/noto-sans-sc-400.woff2",
+        "rel": "fonts/noto-sans-sc-400.woff2",
+        "bytes": 1142552
+      },
+      {
+        "path": "../assets/fonts/noto-sans-sc-700.woff2",
+        "rel": "fonts/noto-sans-sc-700.woff2",
+        "bytes": 1172244
+      },
+      {
+        "path": "../assets/fonts/zcool-kuaile-400.woff2",
+        "rel": "fonts/zcool-kuaile-400.woff2",
+        "bytes": 726052
+      },
+      {
+        "path": "../assets/fonts/zen-maru-gothic-400.woff2",
+        "rel": "fonts/zen-maru-gothic-400.woff2",
+        "bytes": 1436276
+      },
+      {
+        "path": "../assets/fonts/zen-maru-gothic-700.woff2",
+        "rel": "fonts/zen-maru-gothic-700.woff2",
+        "bytes": 1492576
+      }
+    ],
+    "families": {
+      "title": "'ZCOOL KuaiLe','Hachi Maru Pop',system-ui,sans-serif",
+      "jp": "'Zen Maru Gothic','Hachi Maru Pop',sans-serif",
+      "body": "'Noto Sans SC','Zen Maru Gothic',system-ui,sans-serif"
+    }
+  },
+  "sections": [
+    {
+      "id": "S0",
+      "name": "加载入场",
+      "assets": [
+        "../assets/personal/dilla_plush_big.webp",
+        "../assets/maimai/dilla_01_base.webp"
+      ]
+    },
+    {
+      "id": "S1",
+      "name": "Hero 主视觉",
+      "assets": [
+        "../assets/personal/dilla_plush_big.webp",
+        "../assets/personal/dilla_plush_small.webp",
+        "../assets/personal/dilla_plush_pair.webp",
+        "../assets/maimai/dilla_01_base.webp",
+        "../assets/maimai/dilla_07_lime.webp",
+        "../assets/ui/aya_space_l.webp"
+      ]
+    },
+    {
+      "id": "S2",
+      "name": "18 岁生日蛋糕 / 吹蜡烛",
+      "assets": [
+        "../assets/pokemon/pikachu_025.webp",
+        "../assets/pokemon/eevee_133.webp",
+        "../assets/pokemon/jigglypuff_039.webp",
+        "../assets/acnh/leaf_icon.webp",
+        "../assets/personal/us_switch_square.webp"
+      ]
+    },
+    {
+      "id": "S3",
+      "name": "MARETU 电台",
+      "assets": [
+        "../assets/marettu/mind_brand.webp",
+        "../assets/marettu/umi_naoshi.webp",
+        "../assets/marettu/white_happy.webp",
+        "../assets/marettu/coin_locker_baby.webp",
+        "../assets/marettu/maegamist.webp",
+        "../assets/marettu/umitagari.webp",
+        "../assets/marettu/shiu.webp",
+        "../assets/marettu/dokuhaku.webp",
+        "../assets/marettu/binomiuri.webp",
+        "../assets/marettu/sunusumumuriku.webp",
+        "../assets/personal/hamster_ball.webp"
+      ]
+    },
+    {
+      "id": "S4",
+      "name": "动森 · 岛上公告（含她喜欢的村民）",
+      "assets": [
+        "../assets/acnh/isabelle.webp",
+        "../assets/acnh/sasha_mixueer.webp",
+        "../assets/acnh/fang_shipeiya.webp",
+        "../assets/acnh/kk_slider.webp",
+        "../assets/acnh/celeste.webp"
+      ]
+    },
+    {
+      "id": "S5",
+      "name": "宝可梦 · 图鉴 + 伊布家族合影 + 剑盾专区",
+      "assets": [
+        "../assets/pokemon/eevee_133.webp",
+        "../assets/pokemon/vaporeon_134.webp",
+        "../assets/pokemon/jolteon_135.webp",
+        "../assets/pokemon/flareon_136.webp",
+        "../assets/pokemon/espeon_196.webp",
+        "../assets/pokemon/umbreon_197.webp",
+        "../assets/pokemon/leafeon_470.webp",
+        "../assets/pokemon/glaceon_471.webp",
+        "../assets/pokemon/sylveon_700.webp",
+        "../assets/pokemon/lycanroc_745_midday.webp",
+        "../assets/pokemon/lycanroc_10126_midnight.webp",
+        "../assets/pokemon/lycanroc_10152_dusk.webp",
+        "../assets/pokemon/zacian_888.webp",
+        "../assets/pokemon/zamazenta_889.webp",
+        "../assets/pokemon/eternatus_890.webp",
+        "../assets/pokemon/corviknight_823.webp",
+        "../assets/pokemon/dragapult_887.webp",
+        "../assets/pokemon/alcremie_869.webp",
+        "../assets/pokemon/morpeko_877.webp",
+        "../assets/personal/hamster_face.webp",
+        "../assets/ui/aya_nameplate.webp"
+      ]
+    },
+    {
+      "id": "S6",
+      "name": "人森 · 居民卡",
+      "assets": [
+        "../assets/personal/hamster_avatar.webp",
+        "../assets/ui/aya_avatar.webp",
+        "../assets/personal/hamster_cage.webp",
+        "../assets/tomodachi/tomo_logo.webp",
+        "../assets/tomodachi/tomo_kv_1.webp"
+      ]
+    },
+    {
+      "id": "S7",
+      "name": "结尾信 + 3D 生日蛋糕动画",
+      "assets": [
+        "../assets/personal/us_switch.webp",
+        "../assets/personal/us_switch_square.webp",
+        "../assets/ui/aya_nameplate.webp"
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "path": "../assets/audio/acnh_bgm.mp4",
+      "rel": "audio/acnh_bgm.mp4",
+      "bytes": 1459739,
+      "title": "动森背景音乐（ACNH BGM）",
+      "use": "全站 BGM，单曲循环。左上角透明音符按钮控制播放/暂停。",
+      "codec": "AAC / mp4a，48000 Hz 立体声，约 90 秒",
+      "note": "浏览器原生可播，无需转码。默认不自动播放（浏览器会拦截），首次用户交互后开始播放。"
+    }
+  ],
+  "vendor": [
+    {
+      "path": "../assets/vendor/three.min.js",
+      "rel": "vendor/three.min.js",
+      "bytes": 608081,
+      "title": "Three.js r149（UMD 构建）",
+      "use": "S7 的 3D 生日蛋糕动画。用 <script src=\"../assets/vendor/three.min.js\"></script> 引入，会暴露全局 THREE。",
+      "note": "r149 是最后一个干净的 UMD 版本（r150+ 弃用、r160 移除）。已实测：全局 THREE 可用，Scene/Camera/Renderer/Geometry 齐全。",
+      "cdn_fallback": "https://unpkg.com/three@0.149.0/build/three.min.js"
+    }
+  ],
+  "images": [
+    {
+      "path": "../assets/maimai/dilla_01_base.webp",
+      "rel": "maimai/dilla_01_base.webp",
+      "group": "maimai",
+      "title": "迪拉熊（原版蓝·DX无印启程区域）",
+      "use": "S1 主视觉左 / S0 加载动画",
+      "recommended": true,
+      "w": 344,
+      "h": 344,
+      "bytes": 11056
+    },
+    {
+      "path": "../assets/maimai/dilla_02_ietek.webp",
+      "rel": "maimai/dilla_02_ietek.webp",
+      "group": "maimai",
+      "title": "雪人熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 11800
+    },
+    {
+      "path": "../assets/maimai/dilla_03_risuk.webp",
+      "rel": "maimai/dilla_03_risuk.webp",
+      "group": "maimai",
+      "title": "栗子熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 13602
+    },
+    {
+      "path": "../assets/maimai/dilla_04_panda.webp",
+      "rel": "maimai/dilla_04_panda.webp",
+      "group": "maimai",
+      "title": "熊猫熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 15070
+    },
+    {
+      "path": "../assets/maimai/dilla_05_mitsuyoshi.webp",
+      "rel": "maimai/dilla_05_mitsuyoshi.webp",
+      "group": "maimai",
+      "title": "光吉熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 15424
+    },
+    {
+      "path": "../assets/maimai/dilla_06_aoharu.webp",
+      "rel": "maimai/dilla_06_aoharu.webp",
+      "group": "maimai",
+      "title": "青春熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 13636
+    },
+    {
+      "path": "../assets/maimai/dilla_07_lime.webp",
+      "rel": "maimai/dilla_07_lime.webp",
+      "group": "maimai",
+      "title": "酸橙熊熊（青绿·咻哇咻哇区域）",
+      "use": "S1 主视觉右",
+      "recommended": true,
+      "w": 344,
+      "h": 344,
+      "bytes": 7116
+    },
+    {
+      "path": "../assets/maimai/dilla_08_lemon.webp",
+      "rel": "maimai/dilla_08_lemon.webp",
+      "group": "maimai",
+      "title": "柠檬熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 7082
+    },
+    {
+      "path": "../assets/maimai/dilla_09_splash.webp",
+      "rel": "maimai/dilla_09_splash.webp",
+      "group": "maimai",
+      "title": "Splash 版迪拉熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 11404
+    },
+    {
+      "path": "../assets/maimai/dilla_10_universe3.webp",
+      "rel": "maimai/dilla_10_universe3.webp",
+      "group": "maimai",
+      "title": "UNiVERSE 版迪拉熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 12422
+    },
+    {
+      "path": "../assets/maimai/dilla_11_universe4.webp",
+      "rel": "maimai/dilla_11_universe4.webp",
+      "group": "maimai",
+      "title": "UNiVERSE 版柠檬熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 6868
+    },
+    {
+      "path": "../assets/maimai/dilla_12_universe5.webp",
+      "rel": "maimai/dilla_12_universe5.webp",
+      "group": "maimai",
+      "title": "UNiVERSE 版酸橙熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 6884
+    },
+    {
+      "path": "../assets/maimai/dilla_13_tanuki.webp",
+      "rel": "maimai/dilla_13_tanuki.webp",
+      "group": "maimai",
+      "title": "狸子熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 256,
+      "h": 352,
+      "bytes": 15230
+    },
+    {
+      "path": "../assets/maimai/dilla_14_ninja.webp",
+      "rel": "maimai/dilla_14_ninja.webp",
+      "group": "maimai",
+      "title": "忍者熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 13696
+    },
+    {
+      "path": "../assets/maimai/dilla_15_dragon.webp",
+      "rel": "maimai/dilla_15_dragon.webp",
+      "group": "maimai",
+      "title": "恶龙熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 15228
+    },
+    {
+      "path": "../assets/maimai/dilla_16_blackrose.webp",
+      "rel": "maimai/dilla_16_blackrose.webp",
+      "group": "maimai",
+      "title": "黑蔷薇熊熊",
+      "use": "备用",
+      "recommended": false,
+      "w": 344,
+      "h": 344,
+      "bytes": 14116
+    },
+    {
+      "path": "../assets/maimai/maimai_favicon.webp",
+      "rel": "maimai/maimai_favicon.webp",
+      "group": "maimai",
+      "title": "maimai 官网 favicon",
+      "use": "站点 favicon",
+      "recommended": true,
+      "w": 64,
+      "h": 64,
+      "bytes": 2290
+    },
+    {
+      "path": "../assets/maimai/maimai_touchicon.webp",
+      "rel": "maimai/maimai_touchicon.webp",
+      "group": "maimai",
+      "title": "maimai 官网 touch icon",
+      "use": "PWA / Apple Touch Icon",
+      "recommended": false,
+      "w": 256,
+      "h": 256,
+      "bytes": 25532
+    },
+    {
+      "path": "../assets/acnh/blathers.webp",
+      "rel": "acnh/blathers.webp",
+      "group": "acnh",
+      "title": "傅达 Blathers",
+      "use": "S4 备用",
+      "recommended": false,
+      "w": 590,
+      "h": 536,
+      "bytes": 32982
+    },
+    {
+      "path": "../assets/acnh/celeste.webp",
+      "rel": "acnh/celeste.webp",
+      "group": "acnh",
+      "title": "傅珂 Celeste",
+      "use": "S4 右上装饰",
+      "recommended": true,
+      "w": 388,
+      "h": 502,
+      "bytes": 30818
+    },
+    {
+      "path": "../assets/acnh/chief.webp",
+      "rel": "acnh/chief.webp",
+      "group": "acnh",
+      "title": "阿猪 Chief（狼）",
+      "use": "S4 备用",
+      "recommended": false,
+      "w": 450,
+      "h": 900,
+      "bytes": 62114
+    },
+    {
+      "path": "../assets/acnh/diana.webp",
+      "rel": "acnh/diana.webp",
+      "group": "acnh",
+      "title": "艳后 Diana",
+      "use": "备用",
+      "recommended": false,
+      "w": 603,
+      "h": 900,
+      "bytes": 60542
+    },
+    {
+      "path": "../assets/acnh/fang_shipeiya.webp",
+      "rel": "acnh/fang_shipeiya.webp",
+      "group": "acnh",
+      "title": "★ 史培亚 Fang（狼，暴躁性格）",
+      "use": "S4 主装饰（她喜欢的村民）",
+      "recommended": true,
+      "w": 488,
+      "h": 900,
+      "bytes": 45180
+    },
+    {
+      "path": "../assets/acnh/isabelle.webp",
+      "rel": "acnh/isabelle.webp",
+      "group": "acnh",
+      "title": "西施惠 Isabelle",
+      "use": "S4 左侧主装饰",
+      "recommended": true,
+      "w": 492,
+      "h": 900,
+      "bytes": 36774
+    },
+    {
+      "path": "../assets/acnh/kk_slider.webp",
+      "rel": "acnh/kk_slider.webp",
+      "group": "acnh",
+      "title": "K.K. Slider",
+      "use": "S4 中下装饰",
+      "recommended": true,
+      "w": 527,
+      "h": 900,
+      "bytes": 68444
+    },
+    {
+      "path": "../assets/acnh/leaf_icon.webp",
+      "rel": "acnh/leaf_icon.webp",
+      "group": "acnh",
+      "title": "动森叶子图标",
+      "use": "全站飘落叶子 / S2 点缀",
+      "recommended": true,
+      "w": 256,
+      "h": 256,
+      "bytes": 5116
+    },
+    {
+      "path": "../assets/acnh/marshal.webp",
+      "rel": "acnh/marshal.webp",
+      "group": "acnh",
+      "title": "小润 Marshal",
+      "use": "备用",
+      "recommended": false,
+      "w": 678,
+      "h": 811,
+      "bytes": 57042
+    },
+    {
+      "path": "../assets/acnh/merengue.webp",
+      "rel": "acnh/merengue.webp",
+      "group": "acnh",
+      "title": "蜜糖 Merengue（犀牛）",
+      "use": "S4 备用",
+      "recommended": false,
+      "w": 596,
+      "h": 900,
+      "bytes": 75584
+    },
+    {
+      "path": "../assets/acnh/redd.webp",
+      "rel": "acnh/redd.webp",
+      "group": "acnh",
+      "title": "狐利 Redd",
+      "use": "备用（神秘商人彩蛋）",
+      "recommended": false,
+      "w": 445,
+      "h": 848,
+      "bytes": 42072
+    },
+    {
+      "path": "../assets/acnh/sasha_mixueer.webp",
+      "rel": "acnh/sasha_mixueer.webp",
+      "group": "acnh",
+      "title": "★ 蜜雪儿 Sasha（兔，懒散性格）",
+      "use": "S4 主装饰（她喜欢的村民）",
+      "recommended": true,
+      "w": 900,
+      "h": 900,
+      "bytes": 36134
+    },
+    {
+      "path": "../assets/acnh/skye.webp",
+      "rel": "acnh/skye.webp",
+      "group": "acnh",
+      "title": "史凯 Skye（狼）",
+      "use": "S4 备用（狼村民同好）",
+      "recommended": false,
+      "w": 450,
+      "h": 900,
+      "bytes": 70108
+    },
+    {
+      "path": "../assets/acnh/tom_nook.webp",
+      "rel": "acnh/tom_nook.webp",
+      "group": "acnh",
+      "title": "狸克 Tom Nook",
+      "use": "S4 备用",
+      "recommended": false,
+      "w": 548,
+      "h": 900,
+      "bytes": 79734
+    },
+    {
+      "path": "../assets/acnh/whitney.webp",
+      "rel": "acnh/whitney.webp",
+      "group": "acnh",
+      "title": "白女士 Whitney（狼）",
+      "use": "S4 备用",
+      "recommended": false,
+      "w": 450,
+      "h": 900,
+      "bytes": 63798
+    },
+    {
+      "path": "../assets/acnh/zucker.webp",
+      "rel": "acnh/zucker.webp",
+      "group": "acnh",
+      "title": "章丸丸 Zucker",
+      "use": "备用",
+      "recommended": false,
+      "w": 493,
+      "h": 900,
+      "bytes": 74312
+    },
+    {
+      "path": "../assets/pokemon/alcremie_869.webp",
+      "rel": "pokemon/alcremie_869.webp",
+      "group": "pokemon",
+      "title": "霜奶仙 No.869",
+      "use": "S5 剑盾可爱系",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 15622
+    },
+    {
+      "path": "../assets/pokemon/bulbasaur_001.webp",
+      "rel": "pokemon/bulbasaur_001.webp",
+      "group": "pokemon",
+      "title": "妙蛙种子 No.001",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 27566
+    },
+    {
+      "path": "../assets/pokemon/charmander_004.webp",
+      "rel": "pokemon/charmander_004.webp",
+      "group": "pokemon",
+      "title": "小火龙 No.004",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 24440
+    },
+    {
+      "path": "../assets/pokemon/cinderace_815.webp",
+      "rel": "pokemon/cinderace_815.webp",
+      "group": "pokemon",
+      "title": "闪焰王牌 No.815",
+      "use": "S5 剑盾御三家最终进化",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19294
+    },
+    {
+      "path": "../assets/pokemon/corviknight_823.webp",
+      "rel": "pokemon/corviknight_823.webp",
+      "group": "pokemon",
+      "title": "钢铠鸦 No.823",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 17946
+    },
+    {
+      "path": "../assets/pokemon/ditto_132.webp",
+      "rel": "pokemon/ditto_132.webp",
+      "group": "pokemon",
+      "title": "百变怪 No.132",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 11368
+    },
+    {
+      "path": "../assets/pokemon/dragapult_887.webp",
+      "rel": "pokemon/dragapult_887.webp",
+      "group": "pokemon",
+      "title": "多龙巴鲁托 No.887",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 29086
+    },
+    {
+      "path": "../assets/pokemon/eevee_133.webp",
+      "rel": "pokemon/eevee_133.webp",
+      "group": "pokemon",
+      "title": "伊布 No.133",
+      "use": "S2 探头 / S5 主视觉 / 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 24594
+    },
+    {
+      "path": "../assets/pokemon/espeon_196.webp",
+      "rel": "pokemon/espeon_196.webp",
+      "group": "pokemon",
+      "title": "太阳伊布 No.196",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19916
+    },
+    {
+      "path": "../assets/pokemon/eternatus_890.webp",
+      "rel": "pokemon/eternatus_890.webp",
+      "group": "pokemon",
+      "title": "无极汰那 No.890",
+      "use": "S5 剑盾传说",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 39222
+    },
+    {
+      "path": "../assets/pokemon/falinks_870.webp",
+      "rel": "pokemon/falinks_870.webp",
+      "group": "pokemon",
+      "title": "列阵兵 No.870",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 25888
+    },
+    {
+      "path": "../assets/pokemon/flareon_136.webp",
+      "rel": "pokemon/flareon_136.webp",
+      "group": "pokemon",
+      "title": "火伊布 No.136",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 27090
+    },
+    {
+      "path": "../assets/pokemon/gengar_094.webp",
+      "rel": "pokemon/gengar_094.webp",
+      "group": "pokemon",
+      "title": "耿鬼 No.094",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 17966
+    },
+    {
+      "path": "../assets/pokemon/glaceon_471.webp",
+      "rel": "pokemon/glaceon_471.webp",
+      "group": "pokemon",
+      "title": "冰伊布 No.471",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 20110
+    },
+    {
+      "path": "../assets/pokemon/grimmsnarl_861.webp",
+      "rel": "pokemon/grimmsnarl_861.webp",
+      "group": "pokemon",
+      "title": "长毛巨魔 No.861",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 25550
+    },
+    {
+      "path": "../assets/pokemon/grookey_810.webp",
+      "rel": "pokemon/grookey_810.webp",
+      "group": "pokemon",
+      "title": "敲音猴 No.810",
+      "use": "S5 剑盾区",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 21986
+    },
+    {
+      "path": "../assets/pokemon/inteleon_818.webp",
+      "rel": "pokemon/inteleon_818.webp",
+      "group": "pokemon",
+      "title": "千面避役 No.818",
+      "use": "S5 剑盾御三家最终进化",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 22332
+    },
+    {
+      "path": "../assets/pokemon/jigglypuff_039.webp",
+      "rel": "pokemon/jigglypuff_039.webp",
+      "group": "pokemon",
+      "title": "胖丁 No.039",
+      "use": "S2 探头",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 20488
+    },
+    {
+      "path": "../assets/pokemon/jolteon_135.webp",
+      "rel": "pokemon/jolteon_135.webp",
+      "group": "pokemon",
+      "title": "雷伊布 No.135",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 31444
+    },
+    {
+      "path": "../assets/pokemon/kubfu_891.webp",
+      "rel": "pokemon/kubfu_891.webp",
+      "group": "pokemon",
+      "title": "熊徒弟 No.891",
+      "use": "S5 剑盾 DLC",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 18810
+    },
+    {
+      "path": "../assets/pokemon/leafeon_470.webp",
+      "rel": "pokemon/leafeon_470.webp",
+      "group": "pokemon",
+      "title": "叶伊布 No.470",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 30840
+    },
+    {
+      "path": "../assets/pokemon/lycanroc_10126_midnight.webp",
+      "rel": "pokemon/lycanroc_10126_midnight.webp",
+      "group": "pokemon",
+      "title": "★ 鬃岩狼人·黑夜形态",
+      "use": "S5 狼系展示",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 23322
+    },
+    {
+      "path": "../assets/pokemon/lycanroc_10152_dusk.webp",
+      "rel": "pokemon/lycanroc_10152_dusk.webp",
+      "group": "pokemon",
+      "title": "★ 鬃岩狼人·黄昏形态",
+      "use": "S5 狼系展示",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 23586
+    },
+    {
+      "path": "../assets/pokemon/lycanroc_745_midday.webp",
+      "rel": "pokemon/lycanroc_745_midday.webp",
+      "group": "pokemon",
+      "title": "★ 鬃岩狼人·白昼形态 No.745",
+      "use": "S5 狼系展示",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 24570
+    },
+    {
+      "path": "../assets/pokemon/magikarp_129.webp",
+      "rel": "pokemon/magikarp_129.webp",
+      "group": "pokemon",
+      "title": "鲤鱼王 No.129",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 26970
+    },
+    {
+      "path": "../assets/pokemon/mareep_179.webp",
+      "rel": "pokemon/mareep_179.webp",
+      "group": "pokemon",
+      "title": "咩利羊 No.179",
+      "use": "S5 小装饰",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 22924
+    },
+    {
+      "path": "../assets/pokemon/mew_151.webp",
+      "rel": "pokemon/mew_151.webp",
+      "group": "pokemon",
+      "title": "梦幻 No.151",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 23588
+    },
+    {
+      "path": "../assets/pokemon/mimikyu_778.webp",
+      "rel": "pokemon/mimikyu_778.webp",
+      "group": "pokemon",
+      "title": "谜拟丘 No.778",
+      "use": "S5 主视觉（INTP 认同感强）",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 15904
+    },
+    {
+      "path": "../assets/pokemon/morpeko_877.webp",
+      "rel": "pokemon/morpeko_877.webp",
+      "group": "pokemon",
+      "title": "莫鲁贝可 No.877",
+      "use": "S5 剑盾可爱系",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 14104
+    },
+    {
+      "path": "../assets/pokemon/pikachu_025.webp",
+      "rel": "pokemon/pikachu_025.webp",
+      "group": "pokemon",
+      "title": "皮卡丘 No.025",
+      "use": "S2 蛋糕后探头",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 22096
+    },
+    {
+      "path": "../assets/pokemon/piplup_393.webp",
+      "rel": "pokemon/piplup_393.webp",
+      "group": "pokemon",
+      "title": "波加曼 No.393",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 20362
+    },
+    {
+      "path": "../assets/pokemon/psyduck_054.webp",
+      "rel": "pokemon/psyduck_054.webp",
+      "group": "pokemon",
+      "title": "可达鸭 No.054",
+      "use": "S5 小装饰",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 18836
+    },
+    {
+      "path": "../assets/pokemon/rillaboom_812.webp",
+      "rel": "pokemon/rillaboom_812.webp",
+      "group": "pokemon",
+      "title": "轰擂金刚猩 No.812",
+      "use": "S5 剑盾御三家最终进化",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 22114
+    },
+    {
+      "path": "../assets/pokemon/rowlet_722.webp",
+      "rel": "pokemon/rowlet_722.webp",
+      "group": "pokemon",
+      "title": "木木枭 No.722",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 20632
+    },
+    {
+      "path": "../assets/pokemon/scorbunny_813.webp",
+      "rel": "pokemon/scorbunny_813.webp",
+      "group": "pokemon",
+      "title": "炎兔儿 No.813",
+      "use": "S5 剑盾区",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 18256
+    },
+    {
+      "path": "../assets/pokemon/sirfetchd_865.webp",
+      "rel": "pokemon/sirfetchd_865.webp",
+      "group": "pokemon",
+      "title": "葱游兵 No.865",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 16396
+    },
+    {
+      "path": "../assets/pokemon/slowpoke_079.webp",
+      "rel": "pokemon/slowpoke_079.webp",
+      "group": "pokemon",
+      "title": "呆呆兽 No.079",
+      "use": "S5 图鉴装饰",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 18016
+    },
+    {
+      "path": "../assets/pokemon/snom_872.webp",
+      "rel": "pokemon/snom_872.webp",
+      "group": "pokemon",
+      "title": "雪吞虫 No.872",
+      "use": "S5 剑盾可爱系",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 9188
+    },
+    {
+      "path": "../assets/pokemon/snorlax_143.webp",
+      "rel": "pokemon/snorlax_143.webp",
+      "group": "pokemon",
+      "title": "卡比兽 No.143",
+      "use": "S5 图鉴装饰",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19910
+    },
+    {
+      "path": "../assets/pokemon/sobble_816.webp",
+      "rel": "pokemon/sobble_816.webp",
+      "group": "pokemon",
+      "title": "泪眼蜥 No.816",
+      "use": "S5 剑盾区",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19456
+    },
+    {
+      "path": "../assets/pokemon/squirtle_007.webp",
+      "rel": "pokemon/squirtle_007.webp",
+      "group": "pokemon",
+      "title": "杰尼龟 No.007",
+      "use": "备用",
+      "recommended": false,
+      "w": 475,
+      "h": 475,
+      "bytes": 23842
+    },
+    {
+      "path": "../assets/pokemon/sylveon_700.webp",
+      "rel": "pokemon/sylveon_700.webp",
+      "group": "pokemon",
+      "title": "★ 仙子伊布 No.700",
+      "use": "S5 伊布家族合影 C 位（她最喜欢）",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 29464
+    },
+    {
+      "path": "../assets/pokemon/togepi_175.webp",
+      "rel": "pokemon/togepi_175.webp",
+      "group": "pokemon",
+      "title": "波克比 No.175",
+      "use": "S5 小装饰",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 26036
+    },
+    {
+      "path": "../assets/pokemon/toxtricity_849.webp",
+      "rel": "pokemon/toxtricity_849.webp",
+      "group": "pokemon",
+      "title": "颤弦蝾螈 No.849",
+      "use": "S5 剑盾知名宝可梦",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19352
+    },
+    {
+      "path": "../assets/pokemon/umbreon_197.webp",
+      "rel": "pokemon/umbreon_197.webp",
+      "group": "pokemon",
+      "title": "月亮伊布 No.197",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 18232
+    },
+    {
+      "path": "../assets/pokemon/urshifu_892.webp",
+      "rel": "pokemon/urshifu_892.webp",
+      "group": "pokemon",
+      "title": "武道熊师 No.892",
+      "use": "S5 剑盾 DLC",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 22684
+    },
+    {
+      "path": "../assets/pokemon/vaporeon_134.webp",
+      "rel": "pokemon/vaporeon_134.webp",
+      "group": "pokemon",
+      "title": "水伊布 No.134",
+      "use": "S5 伊布家族合影",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 28954
+    },
+    {
+      "path": "../assets/pokemon/wooloo_831.webp",
+      "rel": "pokemon/wooloo_831.webp",
+      "group": "pokemon",
+      "title": "毛辫羊 No.831",
+      "use": "S5 剑盾可爱系",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 13866
+    },
+    {
+      "path": "../assets/pokemon/yamper_835.webp",
+      "rel": "pokemon/yamper_835.webp",
+      "group": "pokemon",
+      "title": "来电汪 No.835",
+      "use": "S5 剑盾可爱系",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 19140
+    },
+    {
+      "path": "../assets/pokemon/zacian_10188_crowned.webp",
+      "rel": "pokemon/zacian_10188_crowned.webp",
+      "group": "pokemon",
+      "title": "苍响·剑之王",
+      "use": "S5 剑盾传说·强化形态",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 41138
+    },
+    {
+      "path": "../assets/pokemon/zacian_888.webp",
+      "rel": "pokemon/zacian_888.webp",
+      "group": "pokemon",
+      "title": "苍响 No.888",
+      "use": "S5 剑盾传说（剑版封面）",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 29340
+    },
+    {
+      "path": "../assets/pokemon/zamazenta_10189_crowned.webp",
+      "rel": "pokemon/zamazenta_10189_crowned.webp",
+      "group": "pokemon",
+      "title": "藏玛然特·盾之王",
+      "use": "S5 剑盾传说·强化形态",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 36426
+    },
+    {
+      "path": "../assets/pokemon/zamazenta_889.webp",
+      "rel": "pokemon/zamazenta_889.webp",
+      "group": "pokemon",
+      "title": "藏玛然特 No.889",
+      "use": "S5 剑盾传说（盾版封面）",
+      "recommended": true,
+      "w": 475,
+      "h": 475,
+      "bytes": 31288
+    },
+    {
+      "path": "../assets/tomodachi/tomo_about_1.webp",
+      "rel": "tomodachi/tomo_about_1.webp",
+      "group": "tomodachi",
+      "title": "介绍图 1",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1280,
+      "h": 728,
+      "bytes": 107362
+    },
+    {
+      "path": "../assets/tomodachi/tomo_about_2.webp",
+      "rel": "tomodachi/tomo_about_2.webp",
+      "group": "tomodachi",
+      "title": "介绍图 2",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1280,
+      "h": 728,
+      "bytes": 113800
+    },
+    {
+      "path": "../assets/tomodachi/tomo_about_4.webp",
+      "rel": "tomodachi/tomo_about_4.webp",
+      "group": "tomodachi",
+      "title": "介绍图 4",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1280,
+      "h": 728,
+      "bytes": 174308
+    },
+    {
+      "path": "../assets/tomodachi/tomo_about_6.webp",
+      "rel": "tomodachi/tomo_about_6.webp",
+      "group": "tomodachi",
+      "title": "介绍图 6",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1280,
+      "h": 728,
+      "bytes": 148606
+    },
+    {
+      "path": "../assets/tomodachi/tomo_bird.webp",
+      "rel": "tomodachi/tomo_bird.webp",
+      "group": "tomodachi",
+      "title": "小鸟装饰",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 320,
+      "h": 306,
+      "bytes": 11896
+    },
+    {
+      "path": "../assets/tomodachi/tomo_bowling.webp",
+      "rel": "tomodachi/tomo_bowling.webp",
+      "group": "tomodachi",
+      "title": "保龄球小游戏",
+      "use": "S6 彩蛋",
+      "recommended": false,
+      "w": 1250,
+      "h": 756,
+      "bytes": 82022
+    },
+    {
+      "path": "../assets/tomodachi/tomo_daily_1.webp",
+      "rel": "tomodachi/tomo_daily_1.webp",
+      "group": "tomodachi",
+      "title": "日常截图 1",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1400,
+      "h": 799,
+      "bytes": 117034
+    },
+    {
+      "path": "../assets/tomodachi/tomo_daily_2.webp",
+      "rel": "tomodachi/tomo_daily_2.webp",
+      "group": "tomodachi",
+      "title": "日常截图 2",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1400,
+      "h": 799,
+      "bytes": 150778
+    },
+    {
+      "path": "../assets/tomodachi/tomo_daily_3.webp",
+      "rel": "tomodachi/tomo_daily_3.webp",
+      "group": "tomodachi",
+      "title": "日常截图 3",
+      "use": "S6 备用",
+      "recommended": false,
+      "w": 1400,
+      "h": 799,
+      "bytes": 67982
+    },
+    {
+      "path": "../assets/tomodachi/tomo_ic_create.webp",
+      "rel": "tomodachi/tomo_ic_create.webp",
+      "group": "tomodachi",
+      "title": "菜单图标·创造",
+      "use": "S6 图标",
+      "recommended": true,
+      "w": 179,
+      "h": 136,
+      "bytes": 9534
+    },
+    {
+      "path": "../assets/tomodachi/tomo_ic_enjoy.webp",
+      "rel": "tomodachi/tomo_ic_enjoy.webp",
+      "group": "tomodachi",
+      "title": "菜单图标·享受",
+      "use": "S6 图标",
+      "recommended": true,
+      "w": 166,
+      "h": 134,
+      "bytes": 6450
+    },
+    {
+      "path": "../assets/tomodachi/tomo_ic_item.webp",
+      "rel": "tomodachi/tomo_ic_item.webp",
+      "group": "tomodachi",
+      "title": "菜单图标·道具",
+      "use": "S6 图标",
+      "recommended": true,
+      "w": 202,
+      "h": 135,
+      "bytes": 11166
+    },
+    {
+      "path": "../assets/tomodachi/tomo_ic_make.webp",
+      "rel": "tomodachi/tomo_ic_make.webp",
+      "group": "tomodachi",
+      "title": "菜单图标·制作",
+      "use": "S6 图标",
+      "recommended": true,
+      "w": 201,
+      "h": 160,
+      "bytes": 10972
+    },
+    {
+      "path": "../assets/tomodachi/tomo_ic_rel.webp",
+      "rel": "tomodachi/tomo_ic_rel.webp",
+      "group": "tomodachi",
+      "title": "菜单图标·关系",
+      "use": "S6 图标",
+      "recommended": true,
+      "w": 222,
+      "h": 156,
+      "bytes": 9566
+    },
+    {
+      "path": "../assets/tomodachi/tomo_island_1.webp",
+      "rel": "tomodachi/tomo_island_1.webp",
+      "group": "tomodachi",
+      "title": "岛屿截图 1",
+      "use": "S6 背景纹理",
+      "recommended": false,
+      "w": 1400,
+      "h": 797,
+      "bytes": 170296
+    },
+    {
+      "path": "../assets/tomodachi/tomo_island_2.webp",
+      "rel": "tomodachi/tomo_island_2.webp",
+      "group": "tomodachi",
+      "title": "岛屿截图 2",
+      "use": "S6 背景纹理",
+      "recommended": false,
+      "w": 1400,
+      "h": 797,
+      "bytes": 167040
+    },
+    {
+      "path": "../assets/tomodachi/tomo_island_3.webp",
+      "rel": "tomodachi/tomo_island_3.webp",
+      "group": "tomodachi",
+      "title": "岛屿截图 3",
+      "use": "S6 背景纹理",
+      "recommended": false,
+      "w": 1400,
+      "h": 797,
+      "bytes": 105076
+    },
+    {
+      "path": "../assets/tomodachi/tomo_island_4.webp",
+      "rel": "tomodachi/tomo_island_4.webp",
+      "group": "tomodachi",
+      "title": "岛屿截图 4",
+      "use": "S6 背景纹理",
+      "recommended": false,
+      "w": 1400,
+      "h": 797,
+      "bytes": 266722
+    },
+    {
+      "path": "../assets/tomodachi/tomo_kv_1.webp",
+      "rel": "tomodachi/tomo_kv_1.webp",
+      "group": "tomodachi",
+      "title": "人森主视觉 1",
+      "use": "S6 背景（低透明度）",
+      "recommended": true,
+      "w": 1400,
+      "h": 927,
+      "bytes": 216126
+    },
+    {
+      "path": "../assets/tomodachi/tomo_kv_2.webp",
+      "rel": "tomodachi/tomo_kv_2.webp",
+      "group": "tomodachi",
+      "title": "人森主视觉 2",
+      "use": "S6 备用背景",
+      "recommended": false,
+      "w": 1400,
+      "h": 838,
+      "bytes": 213598
+    },
+    {
+      "path": "../assets/tomodachi/tomo_logo.webp",
+      "rel": "tomodachi/tomo_logo.webp",
+      "group": "tomodachi",
+      "title": "人森 logo",
+      "use": "S6 标题装饰",
+      "recommended": true,
+      "w": 953,
+      "h": 748,
+      "bytes": 64764
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_daily_1.webp",
+      "rel": "tomodachi/tomo_obj_daily_1.webp",
+      "group": "tomodachi",
+      "title": "日常物件 1",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 340,
+      "h": 638,
+      "bytes": 19600
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_daily_2.webp",
+      "rel": "tomodachi/tomo_obj_daily_2.webp",
+      "group": "tomodachi",
+      "title": "日常物件 2",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 572,
+      "h": 440,
+      "bytes": 22554
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_daily_3.webp",
+      "rel": "tomodachi/tomo_obj_daily_3.webp",
+      "group": "tomodachi",
+      "title": "日常物件 3",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 512,
+      "h": 608,
+      "bytes": 25364
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_island_1.webp",
+      "rel": "tomodachi/tomo_obj_island_1.webp",
+      "group": "tomodachi",
+      "title": "岛屿物件 1",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 986,
+      "h": 651,
+      "bytes": 46208
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_island_2.webp",
+      "rel": "tomodachi/tomo_obj_island_2.webp",
+      "group": "tomodachi",
+      "title": "岛屿物件 2",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 369,
+      "h": 307,
+      "bytes": 19134
+    },
+    {
+      "path": "../assets/tomodachi/tomo_obj_resident.webp",
+      "rel": "tomodachi/tomo_obj_resident.webp",
+      "group": "tomodachi",
+      "title": "居民相关物件",
+      "use": "S6 装饰",
+      "recommended": true,
+      "w": 685,
+      "h": 848,
+      "bytes": 40376
+    },
+    {
+      "path": "../assets/tomodachi/tomo_pickup.webp",
+      "rel": "tomodachi/tomo_pickup.webp",
+      "group": "tomodachi",
+      "title": "人森精选大图",
+      "use": "S6 备用背景",
+      "recommended": false,
+      "w": 1400,
+      "h": 787,
+      "bytes": 98506
+    },
+    {
+      "path": "../assets/tomodachi/tomo_product.webp",
+      "rel": "tomodachi/tomo_product.webp",
+      "group": "tomodachi",
+      "title": "商品图",
+      "use": "备用",
+      "recommended": false,
+      "w": 612,
+      "h": 612,
+      "bytes": 108488
+    },
+    {
+      "path": "../assets/tomodachi/tomo_resident_1.webp",
+      "rel": "tomodachi/tomo_resident_1.webp",
+      "group": "tomodachi",
+      "title": "居民截图 1",
+      "use": "S6 内容示意",
+      "recommended": false,
+      "w": 1400,
+      "h": 794,
+      "bytes": 98984
+    },
+    {
+      "path": "../assets/tomodachi/tomo_resident_2.webp",
+      "rel": "tomodachi/tomo_resident_2.webp",
+      "group": "tomodachi",
+      "title": "居民截图 2",
+      "use": "S6 内容示意",
+      "recommended": false,
+      "w": 1400,
+      "h": 794,
+      "bytes": 86436
+    },
+    {
+      "path": "../assets/tomodachi/tomo_resident_3.webp",
+      "rel": "tomodachi/tomo_resident_3.webp",
+      "group": "tomodachi",
+      "title": "居民截图 3",
+      "use": "S6 内容示意",
+      "recommended": false,
+      "w": 1400,
+      "h": 794,
+      "bytes": 118510
+    },
+    {
+      "path": "../assets/tomodachi/tomo_resident_4.webp",
+      "rel": "tomodachi/tomo_resident_4.webp",
+      "group": "tomodachi",
+      "title": "居民截图 4",
+      "use": "S6 内容示意",
+      "recommended": false,
+      "w": 1400,
+      "h": 794,
+      "bytes": 96222
+    },
+    {
+      "path": "../assets/tomodachi/tomo_sticker_1.webp",
+      "rel": "tomodachi/tomo_sticker_1.webp",
+      "group": "tomodachi",
+      "title": "贴纸 1",
+      "use": "S6 贴纸点缀",
+      "recommended": true,
+      "w": 279,
+      "h": 306,
+      "bytes": 8136
+    },
+    {
+      "path": "../assets/tomodachi/tomo_sticker_2.webp",
+      "rel": "tomodachi/tomo_sticker_2.webp",
+      "group": "tomodachi",
+      "title": "贴纸 2",
+      "use": "S6 贴纸点缀",
+      "recommended": true,
+      "w": 298,
+      "h": 333,
+      "bytes": 19292
+    },
+    {
+      "path": "../assets/tomodachi/tomo_sticker_3.webp",
+      "rel": "tomodachi/tomo_sticker_3.webp",
+      "group": "tomodachi",
+      "title": "贴纸 3",
+      "use": "S6 贴纸点缀",
+      "recommended": true,
+      "w": 280,
+      "h": 351,
+      "bytes": 8722
+    },
+    {
+      "path": "../assets/tomodachi/tomo_sticker_4.webp",
+      "rel": "tomodachi/tomo_sticker_4.webp",
+      "group": "tomodachi",
+      "title": "贴纸 4",
+      "use": "S6 贴纸点缀",
+      "recommended": true,
+      "w": 386,
+      "h": 441,
+      "bytes": 16736
+    },
+    {
+      "path": "../assets/marettu/binomiuri.webp",
+      "rel": "marettu/binomiuri.webp",
+      "group": "marettu",
+      "title": "ビノミウリ",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 91070,
+      "title_romaji": "Binomiuri",
+      "track_no": 9
+    },
+    {
+      "path": "../assets/marettu/coin_locker_baby.webp",
+      "rel": "marettu/coin_locker_baby.webp",
+      "group": "marettu",
+      "title": "コインロッカーベイビー",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 58042,
+      "title_romaji": "Coin Locker Baby",
+      "track_no": 4,
+      "easter_egg": "翻到这张时全页闪一次 --c-maretu-red，0.6s 后恢复，仅一次"
+    },
+    {
+      "path": "../assets/marettu/dokuhaku.webp",
+      "rel": "marettu/dokuhaku.webp",
+      "group": "marettu",
+      "title": "ドクハク",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 80680,
+      "title_romaji": "Dokuhaku",
+      "track_no": 8
+    },
+    {
+      "path": "../assets/marettu/maegamist.webp",
+      "rel": "marettu/maegamist.webp",
+      "group": "marettu",
+      "title": "マエガミスト",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 85294,
+      "title_romaji": "Maegamist",
+      "track_no": 5
+    },
+    {
+      "path": "../assets/marettu/mind_brand.webp",
+      "rel": "marettu/mind_brand.webp",
+      "group": "marettu",
+      "title": "マインドブランド",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 81832,
+      "title_romaji": "Mind Brand",
+      "track_no": 1
+    },
+    {
+      "path": "../assets/marettu/shiu.webp",
+      "rel": "marettu/shiu.webp",
+      "group": "marettu",
+      "title": "しう",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 50376,
+      "title_romaji": "Shiu",
+      "track_no": 7
+    },
+    {
+      "path": "../assets/marettu/sunusumumuriku.webp",
+      "rel": "marettu/sunusumumuriku.webp",
+      "group": "marettu",
+      "title": "スヌスムムリク",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 47010,
+      "title_romaji": "Sunusumumuriku",
+      "track_no": 10
+    },
+    {
+      "path": "../assets/marettu/umi_naoshi.webp",
+      "rel": "marettu/umi_naoshi.webp",
+      "group": "marettu",
+      "title": "うみなおし",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 89778,
+      "title_romaji": "Uminaoshi",
+      "track_no": 2
+    },
+    {
+      "path": "../assets/marettu/umitagari.webp",
+      "rel": "marettu/umitagari.webp",
+      "group": "marettu",
+      "title": "うみたがり",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 75410,
+      "title_romaji": "Umitagari",
+      "track_no": 6
+    },
+    {
+      "path": "../assets/marettu/white_happy.webp",
+      "rel": "marettu/white_happy.webp",
+      "group": "marettu",
+      "title": "ホワイトハッピー",
+      "use": "S3 MARETU 电台曲目卡片封面",
+      "recommended": true,
+      "w": 800,
+      "h": 450,
+      "bytes": 92374,
+      "title_romaji": "White Happy",
+      "track_no": 3
+    },
+    {
+      "path": "../assets/ui/aya_avatar.webp",
+      "rel": "ui/aya_avatar.webp",
+      "group": "ui",
+      "title": "阿药 B 站头像",
+      "use": "S6 居民卡头像（圆形裁切+描边）",
+      "recommended": true,
+      "w": 453,
+      "h": 453,
+      "bytes": 5326
+    },
+    {
+      "path": "../assets/ui/aya_nameplate.webp",
+      "rel": "ui/aya_nameplate.webp",
+      "group": "ui",
+      "title": "「有爱楷模」名牌",
+      "use": "S5 徽章区 / S7 装饰",
+      "recommended": true,
+      "w": 450,
+      "h": 450,
+      "bytes": 32980
+    },
+    {
+      "path": "../assets/ui/aya_space_l.webp",
+      "rel": "ui/aya_space_l.webp",
+      "group": "ui",
+      "title": "阿药主页大图",
+      "use": "S1 背景纹理（低透明度）",
+      "recommended": true,
+      "w": 900,
+      "h": 140,
+      "bytes": 27126
+    },
+    {
+      "path": "../assets/ui/aya_space_s.webp",
+      "rel": "ui/aya_space_s.webp",
+      "group": "ui",
+      "title": "阿药主页小图",
+      "use": "备用",
+      "recommended": false,
+      "w": 374,
+      "h": 120,
+      "bytes": 13682
+    },
+    {
+      "path": "../assets/personal/dilla_plush_big.webp",
+      "rel": "personal/dilla_plush_big.webp",
+      "group": "personal",
+      "title": "★ 大只迪拉熊玩偶（单只特写）",
+      "use": "S1 左侧 / S0 加载动画",
+      "recommended": true,
+      "w": 540,
+      "h": 700,
+      "bytes": 47554
+    },
+    {
+      "path": "../assets/personal/dilla_plush_pair.webp",
+      "rel": "personal/dilla_plush_pair.webp",
+      "group": "personal",
+      "title": "★ 两只迪拉熊实物玩偶（舞萌 DX 官方周边，带吊牌）",
+      "use": "S1 主视觉（真实版，优先于官方立绘）",
+      "recommended": true,
+      "w": 1000,
+      "h": 690,
+      "bytes": 89118
+    },
+    {
+      "path": "../assets/personal/dilla_plush_small.webp",
+      "rel": "personal/dilla_plush_small.webp",
+      "group": "personal",
+      "title": "★ 小只迪拉熊挂件（单只特写）",
+      "use": "S1 右侧",
+      "recommended": true,
+      "w": 514,
+      "h": 700,
+      "bytes": 48988
+    },
+    {
+      "path": "../assets/personal/hamster_avatar.webp",
+      "rel": "personal/hamster_avatar.webp",
+      "group": "personal",
+      "title": "★ 仓鼠正脸（宠物）",
+      "use": "S6 居民卡头像 / 圆形头像位",
+      "recommended": true,
+      "w": 600,
+      "h": 600,
+      "bytes": 35792
+    },
+    {
+      "path": "../assets/personal/hamster_ball.webp",
+      "rel": "personal/hamster_ball.webp",
+      "group": "personal",
+      "title": "★ 仓鼠缩成球睡觉 + 漫画「!?」特效",
+      "use": "S3 彩蛋（翻到某张卡时弹出）/ S5 表情包位",
+      "recommended": true,
+      "w": 720,
+      "h": 720,
+      "bytes": 135572
+    },
+    {
+      "path": "../assets/personal/hamster_cage.webp",
+      "rel": "personal/hamster_cage.webp",
+      "group": "personal",
+      "title": "★ 仓鼠趴笼顶（竖图，已裁掉手机状态栏）",
+      "use": "S6 竖版卡位 / 移动端装饰",
+      "recommended": true,
+      "w": 423,
+      "h": 900,
+      "bytes": 34088
+    },
+    {
+      "path": "../assets/personal/hamster_face.webp",
+      "rel": "personal/hamster_face.webp",
+      "group": "personal",
+      "title": "★ 仓鼠特写（宠物）",
+      "use": "S5 图鉴卡 / 装饰",
+      "recommended": true,
+      "w": 600,
+      "h": 600,
+      "bytes": 14142
+    },
+    {
+      "path": "../assets/personal/us_switch.webp",
+      "rel": "personal/us_switch.webp",
+      "group": "personal",
+      "title": "★ 我们俩：两人躺床上一起玩 Switch（穿宝可梦睡衣）",
+      "use": "S7 结尾信核心照片 + S2 蛋糕区回忆卡",
+      "recommended": true,
+      "w": 1000,
+      "h": 726,
+      "bytes": 70650
+    },
+    {
+      "path": "../assets/personal/us_switch_square.webp",
+      "rel": "personal/us_switch_square.webp",
+      "group": "personal",
+      "title": "★ 我们俩（方形裁切版）",
+      "use": "S6 居民卡配图 / 任意方形卡位",
+      "recommended": true,
+      "w": 640,
+      "h": 640,
+      "bytes": 44514
+    }
+  ],
+  "deco": [
+    {
+      "path": "../assets/deco/note.svg",
+      "rel": "deco/note.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/notes.svg",
+      "rel": "deco/notes.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/music_mic.svg",
+      "rel": "deco/music_mic.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/headphone.svg",
+      "rel": "deco/headphone.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/cd.svg",
+      "rel": "deco/cd.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/tape.svg",
+      "rel": "deco/tape.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/video.svg",
+      "rel": "deco/video.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/tv.svg",
+      "rel": "deco/tv.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/phone.svg",
+      "rel": "deco/phone.svg",
+      "group": "music"
+    },
+    {
+      "path": "../assets/deco/cake.svg",
+      "rel": "deco/cake.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/cupcake.svg",
+      "rel": "deco/cupcake.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/balloon.svg",
+      "rel": "deco/balloon.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/gift.svg",
+      "rel": "deco/gift.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/party.svg",
+      "rel": "deco/party.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/ribbon.svg",
+      "rel": "deco/ribbon.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/crown.svg",
+      "rel": "deco/crown.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/candy.svg",
+      "rel": "deco/candy.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/cookie.svg",
+      "rel": "deco/cookie.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/bubbletea.svg",
+      "rel": "deco/bubbletea.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/ice.svg",
+      "rel": "deco/ice.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/cherry.svg",
+      "rel": "deco/cherry.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/strawberry.svg",
+      "rel": "deco/strawberry.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/peach.svg",
+      "rel": "deco/peach.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/apple.svg",
+      "rel": "deco/apple.svg",
+      "group": "party"
+    },
+    {
+      "path": "../assets/deco/star.svg",
+      "rel": "deco/star.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/star2.svg",
+      "rel": "deco/star2.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/sparkle.svg",
+      "rel": "deco/sparkle.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/sparkles2.svg",
+      "rel": "deco/sparkles2.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/comet.svg",
+      "rel": "deco/comet.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/dizzy.svg",
+      "rel": "deco/dizzy.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/fire.svg",
+      "rel": "deco/fire.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/rainbow.svg",
+      "rel": "deco/rainbow.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/diamond.svg",
+      "rel": "deco/diamond.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/clover.svg",
+      "rel": "deco/clover.svg",
+      "group": "sparkle"
+    },
+    {
+      "path": "../assets/deco/bear.svg",
+      "rel": "deco/bear.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/cat.svg",
+      "rel": "deco/cat.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/paw.svg",
+      "rel": "deco/paw.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/bird.svg",
+      "rel": "deco/bird.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/chick.svg",
+      "rel": "deco/chick.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/fish.svg",
+      "rel": "deco/fish.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/shell.svg",
+      "rel": "deco/shell.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/mushroom.svg",
+      "rel": "deco/mushroom.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/leaf.svg",
+      "rel": "deco/leaf.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/flower.svg",
+      "rel": "deco/flower.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/blossom.svg",
+      "rel": "deco/blossom.svg",
+      "group": "nature"
+    },
+    {
+      "path": "../assets/deco/heart_pink.svg",
+      "rel": "deco/heart_pink.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/heart_blue.svg",
+      "rel": "deco/heart_blue.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/bubble.svg",
+      "rel": "deco/bubble.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/letter.svg",
+      "rel": "deco/letter.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/envelope.svg",
+      "rel": "deco/envelope.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/clock.svg",
+      "rel": "deco/clock.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/calendar.svg",
+      "rel": "deco/calendar.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/pin.svg",
+      "rel": "deco/pin.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/bulb.svg",
+      "rel": "deco/bulb.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/check.svg",
+      "rel": "deco/check.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/zzz.svg",
+      "rel": "deco/zzz.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/game.svg",
+      "rel": "deco/game.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/dice.svg",
+      "rel": "deco/dice.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/trophy.svg",
+      "rel": "deco/trophy.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/medal.svg",
+      "rel": "deco/medal.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/camera.svg",
+      "rel": "deco/camera.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/cloud.svg",
+      "rel": "deco/cloud.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/sun.svg",
+      "rel": "deco/sun.svg",
+      "group": "misc"
+    },
+    {
+      "path": "../assets/deco/moon.svg",
+      "rel": "deco/moon.svg",
+      "group": "misc"
+    }
+  ],
+  "counts": {
+    "images": 147,
+    "deco_svg": 64,
+    "fonts": 7,
+    "audio": 1,
+    "vendor": 1
+  }
+}

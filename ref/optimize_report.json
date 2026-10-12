@@ -1,0 +1,1038 @@
+[
+  {
+    "file": "assets/acnh/blathers.webp",
+    "w": 590,
+    "h": 536,
+    "bytes_before": 34170,
+    "bytes_after": 32982
+  },
+  {
+    "file": "assets/acnh/celeste.webp",
+    "w": 388,
+    "h": 502,
+    "bytes_before": 31758,
+    "bytes_after": 30818
+  },
+  {
+    "file": "assets/acnh/chief.webp",
+    "w": 450,
+    "h": 900,
+    "bytes_before": 917132,
+    "bytes_after": 62114
+  },
+  {
+    "file": "assets/acnh/diana.webp",
+    "w": 603,
+    "h": 900,
+    "bytes_before": 64170,
+    "bytes_after": 60542
+  },
+  {
+    "file": "assets/acnh/fang_shipeiya.webp",
+    "w": 488,
+    "h": 900,
+    "bytes_before": 2651864,
+    "bytes_after": 45180
+  },
+  {
+    "file": "assets/acnh/isabelle.webp",
+    "w": 492,
+    "h": 900,
+    "bytes_before": 40472,
+    "bytes_after": 36774
+  },
+  {
+    "file": "assets/acnh/kk_slider.webp",
+    "w": 527,
+    "h": 900,
+    "bytes_before": 71302,
+    "bytes_after": 68444
+  },
+  {
+    "file": "assets/acnh/leaf_icon.webp",
+    "w": 256,
+    "h": 256,
+    "bytes_before": 5346,
+    "bytes_after": 5116
+  },
+  {
+    "file": "assets/acnh/marshal.webp",
+    "w": 678,
+    "h": 811,
+    "bytes_before": 60542,
+    "bytes_after": 57042
+  },
+  {
+    "file": "assets/acnh/merengue.webp",
+    "w": 596,
+    "h": 900,
+    "bytes_before": 1082134,
+    "bytes_after": 75584
+  },
+  {
+    "file": "assets/acnh/redd.webp",
+    "w": 445,
+    "h": 848,
+    "bytes_before": 45168,
+    "bytes_after": 42072
+  },
+  {
+    "file": "assets/acnh/sasha_mixueer.webp",
+    "w": 138,
+    "h": 232,
+    "bytes_before": 48013,
+    "bytes_after": 8530
+  },
+  {
+    "file": "assets/acnh/skye.webp",
+    "w": 450,
+    "h": 900,
+    "bytes_before": 948656,
+    "bytes_after": 70108
+  },
+  {
+    "file": "assets/acnh/tom_nook.webp",
+    "w": 548,
+    "h": 900,
+    "bytes_before": 83852,
+    "bytes_after": 79734
+  },
+  {
+    "file": "assets/acnh/whitney.webp",
+    "w": 450,
+    "h": 900,
+    "bytes_before": 967798,
+    "bytes_after": 63798
+  },
+  {
+    "file": "assets/acnh/zucker.webp",
+    "w": 493,
+    "h": 900,
+    "bytes_before": 79032,
+    "bytes_after": 74312
+  },
+  {
+    "file": "assets/maimai/dilla_01_base.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 11286,
+    "bytes_after": 11056
+  },
+  {
+    "file": "assets/maimai/dilla_02_ietek.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 11980,
+    "bytes_after": 11800
+  },
+  {
+    "file": "assets/maimai/dilla_03_risuk.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 14006,
+    "bytes_after": 13602
+  },
+  {
+    "file": "assets/maimai/dilla_04_panda.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 15624,
+    "bytes_after": 15070
+  },
+  {
+    "file": "assets/maimai/dilla_05_mitsuyoshi.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 15766,
+    "bytes_after": 15424
+  },
+  {
+    "file": "assets/maimai/dilla_06_aoharu.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 13962,
+    "bytes_after": 13636
+  },
+  {
+    "file": "assets/maimai/dilla_07_lime.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 7234,
+    "bytes_after": 7116
+  },
+  {
+    "file": "assets/maimai/dilla_08_lemon.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 7182,
+    "bytes_after": 7082
+  },
+  {
+    "file": "assets/maimai/dilla_09_splash.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 11524,
+    "bytes_after": 11404
+  },
+  {
+    "file": "assets/maimai/dilla_10_universe3.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 12608,
+    "bytes_after": 12422
+  },
+  {
+    "file": "assets/maimai/dilla_11_universe4.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 6954,
+    "bytes_after": 6868
+  },
+  {
+    "file": "assets/maimai/dilla_12_universe5.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 7012,
+    "bytes_after": 6884
+  },
+  {
+    "file": "assets/maimai/dilla_13_tanuki.webp",
+    "w": 256,
+    "h": 352,
+    "bytes_before": 15432,
+    "bytes_after": 15230
+  },
+  {
+    "file": "assets/maimai/dilla_14_ninja.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 13812,
+    "bytes_after": 13696
+  },
+  {
+    "file": "assets/maimai/dilla_15_dragon.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 15780,
+    "bytes_after": 15228
+  },
+  {
+    "file": "assets/maimai/dilla_16_blackrose.webp",
+    "w": 344,
+    "h": 344,
+    "bytes_before": 14236,
+    "bytes_after": 14116
+  },
+  {
+    "file": "assets/maimai/maimai_favicon.webp",
+    "w": 64,
+    "h": 64,
+    "bytes_before": 2324,
+    "bytes_after": 2290
+  },
+  {
+    "file": "assets/maimai/maimai_touchicon.webp",
+    "w": 256,
+    "h": 256,
+    "bytes_before": 26812,
+    "bytes_after": 25532
+  },
+  {
+    "file": "assets/marettu/binomiuri__ビノミウリ.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 92578,
+    "bytes_after": 91070
+  },
+  {
+    "file": "assets/marettu/coin_locker_baby__コインロッカーベイビー.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 58290,
+    "bytes_after": 58042
+  },
+  {
+    "file": "assets/marettu/dokuhaku__ドクハク.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 81548,
+    "bytes_after": 80680
+  },
+  {
+    "file": "assets/marettu/maegamist__マエガミスト.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 86228,
+    "bytes_after": 85294
+  },
+  {
+    "file": "assets/marettu/mind_brand__マインドブランド.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 83216,
+    "bytes_after": 81832
+  },
+  {
+    "file": "assets/marettu/shiu__しう.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 51474,
+    "bytes_after": 50376
+  },
+  {
+    "file": "assets/marettu/sunusumumuriku__スヌスムムリク.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 47794,
+    "bytes_after": 47010
+  },
+  {
+    "file": "assets/marettu/umi_naoshi__うみなおし.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 90834,
+    "bytes_after": 89778
+  },
+  {
+    "file": "assets/marettu/umitagari__うみたがり.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 76512,
+    "bytes_after": 75410
+  },
+  {
+    "file": "assets/marettu/white_happy__ホワイトハッピー.webp",
+    "w": 800,
+    "h": 450,
+    "bytes_before": 93470,
+    "bytes_after": 92374
+  },
+  {
+    "file": "assets/personal/dilla_plush_big.webp",
+    "w": 540,
+    "h": 700,
+    "bytes_before": 49944,
+    "bytes_after": 47554
+  },
+  {
+    "file": "assets/personal/dilla_plush_pair.webp",
+    "w": 1000,
+    "h": 690,
+    "bytes_before": 121140,
+    "bytes_after": 89118
+  },
+  {
+    "file": "assets/personal/dilla_plush_small.webp",
+    "w": 514,
+    "h": 700,
+    "bytes_before": 49718,
+    "bytes_after": 48988
+  },
+  {
+    "file": "assets/personal/hamster_avatar.webp",
+    "w": 600,
+    "h": 600,
+    "bytes_before": 37866,
+    "bytes_after": 35792
+  },
+  {
+    "file": "assets/personal/hamster_ball.webp",
+    "w": 720,
+    "h": 720,
+    "bytes_before": 136388,
+    "bytes_after": 135572
+  },
+  {
+    "file": "assets/personal/hamster_cage.webp",
+    "w": 423,
+    "h": 900,
+    "bytes_before": 34614,
+    "bytes_after": 34088
+  },
+  {
+    "file": "assets/personal/hamster_face.webp",
+    "w": 600,
+    "h": 600,
+    "bytes_before": 14652,
+    "bytes_after": 14142
+  },
+  {
+    "file": "assets/personal/us_switch.webp",
+    "w": 1000,
+    "h": 726,
+    "bytes_before": 91256,
+    "bytes_after": 70650
+  },
+  {
+    "file": "assets/personal/us_switch_square.webp",
+    "w": 640,
+    "h": 640,
+    "bytes_before": 45842,
+    "bytes_after": 44514
+  },
+  {
+    "file": "assets/pokemon/alcremie_869.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 102203,
+    "bytes_after": 15622
+  },
+  {
+    "file": "assets/pokemon/bulbasaur_001.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 28148,
+    "bytes_after": 27566
+  },
+  {
+    "file": "assets/pokemon/charmander_004.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 24968,
+    "bytes_after": 24440
+  },
+  {
+    "file": "assets/pokemon/cinderace_815.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 79237,
+    "bytes_after": 19294
+  },
+  {
+    "file": "assets/pokemon/corviknight_823.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 110183,
+    "bytes_after": 17946
+  },
+  {
+    "file": "assets/pokemon/ditto_132.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 11506,
+    "bytes_after": 11368
+  },
+  {
+    "file": "assets/pokemon/dragapult_887.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 159001,
+    "bytes_after": 29086
+  },
+  {
+    "file": "assets/pokemon/eevee_133.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 142266,
+    "bytes_after": 25146
+  },
+  {
+    "file": "assets/pokemon/eevee_133.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 25146,
+    "bytes_after": 24594
+  },
+  {
+    "file": "assets/pokemon/espeon_196.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 104026,
+    "bytes_after": 19916
+  },
+  {
+    "file": "assets/pokemon/eternatus_890.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 132488,
+    "bytes_after": 39222
+  },
+  {
+    "file": "assets/pokemon/falinks_870.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 134349,
+    "bytes_after": 25888
+  },
+  {
+    "file": "assets/pokemon/flareon_136.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 149971,
+    "bytes_after": 27090
+  },
+  {
+    "file": "assets/pokemon/gengar_094.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 18278,
+    "bytes_after": 17966
+  },
+  {
+    "file": "assets/pokemon/glaceon_471.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 93967,
+    "bytes_after": 20110
+  },
+  {
+    "file": "assets/pokemon/grimmsnarl_861.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 145602,
+    "bytes_after": 25550
+  },
+  {
+    "file": "assets/pokemon/grookey_810.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 109936,
+    "bytes_after": 21986
+  },
+  {
+    "file": "assets/pokemon/inteleon_818.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 81447,
+    "bytes_after": 22332
+  },
+  {
+    "file": "assets/pokemon/jigglypuff_039.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 20788,
+    "bytes_after": 20488
+  },
+  {
+    "file": "assets/pokemon/jolteon_135.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 141908,
+    "bytes_after": 31444
+  },
+  {
+    "file": "assets/pokemon/kubfu_891.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 100584,
+    "bytes_after": 18810
+  },
+  {
+    "file": "assets/pokemon/leafeon_470.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 141615,
+    "bytes_after": 30840
+  },
+  {
+    "file": "assets/pokemon/lycanroc_10152_midnight.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 98879,
+    "bytes_after": 23586
+  },
+  {
+    "file": "assets/pokemon/lycanroc_10153_dusk.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 161392,
+    "bytes_after": 37872
+  },
+  {
+    "file": "assets/pokemon/lycanroc_745_midday.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 104716,
+    "bytes_after": 24570
+  },
+  {
+    "file": "assets/pokemon/magikarp_129.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 27754,
+    "bytes_after": 26970
+  },
+  {
+    "file": "assets/pokemon/mareep_179.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 23440,
+    "bytes_after": 22924
+  },
+  {
+    "file": "assets/pokemon/mew_151.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 24226,
+    "bytes_after": 23588
+  },
+  {
+    "file": "assets/pokemon/mimikyu_778.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 16212,
+    "bytes_after": 15904
+  },
+  {
+    "file": "assets/pokemon/morpeko_877.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 88056,
+    "bytes_after": 14104
+  },
+  {
+    "file": "assets/pokemon/pikachu_025.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 22490,
+    "bytes_after": 22096
+  },
+  {
+    "file": "assets/pokemon/piplup_393.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 20958,
+    "bytes_after": 20362
+  },
+  {
+    "file": "assets/pokemon/psyduck_054.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 19100,
+    "bytes_after": 18836
+  },
+  {
+    "file": "assets/pokemon/rillaboom_812.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 123985,
+    "bytes_after": 22114
+  },
+  {
+    "file": "assets/pokemon/rowlet_722.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 21080,
+    "bytes_after": 20632
+  },
+  {
+    "file": "assets/pokemon/scorbunny_813.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 65530,
+    "bytes_after": 18256
+  },
+  {
+    "file": "assets/pokemon/sirfetchd_865.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 85314,
+    "bytes_after": 16396
+  },
+  {
+    "file": "assets/pokemon/slowpoke_079.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 18354,
+    "bytes_after": 18016
+  },
+  {
+    "file": "assets/pokemon/snom_872.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 58598,
+    "bytes_after": 9188
+  },
+  {
+    "file": "assets/pokemon/snorlax_143.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 20600,
+    "bytes_after": 19910
+  },
+  {
+    "file": "assets/pokemon/sobble_816.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 100983,
+    "bytes_after": 19456
+  },
+  {
+    "file": "assets/pokemon/squirtle_007.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 24274,
+    "bytes_after": 23842
+  },
+  {
+    "file": "assets/pokemon/sylveon_700.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 136613,
+    "bytes_after": 29464
+  },
+  {
+    "file": "assets/pokemon/togepi_175.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 26506,
+    "bytes_after": 26036
+  },
+  {
+    "file": "assets/pokemon/toxtricity_849.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 91895,
+    "bytes_after": 19352
+  },
+  {
+    "file": "assets/pokemon/umbreon_197.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 99819,
+    "bytes_after": 18232
+  },
+  {
+    "file": "assets/pokemon/urshifu_892.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 119412,
+    "bytes_after": 22684
+  },
+  {
+    "file": "assets/pokemon/vaporeon_134.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 157955,
+    "bytes_after": 28954
+  },
+  {
+    "file": "assets/pokemon/wooloo_831.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 95893,
+    "bytes_after": 13866
+  },
+  {
+    "file": "assets/pokemon/yamper_835.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 110032,
+    "bytes_after": 19140
+  },
+  {
+    "file": "assets/pokemon/zacian_10188_crowned.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 177782,
+    "bytes_after": 41138
+  },
+  {
+    "file": "assets/pokemon/zacian_888.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 127948,
+    "bytes_after": 29340
+  },
+  {
+    "file": "assets/pokemon/zamazenta_10189_crowned.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 160641,
+    "bytes_after": 36426
+  },
+  {
+    "file": "assets/pokemon/zamazenta_889.webp",
+    "w": 475,
+    "h": 475,
+    "bytes_before": 151379,
+    "bytes_after": 31288
+  },
+  {
+    "file": "assets/tomodachi/tomo_about_1.webp",
+    "w": 1280,
+    "h": 728,
+    "bytes_before": 109820,
+    "bytes_after": 107362
+  },
+  {
+    "file": "assets/tomodachi/tomo_about_2.webp",
+    "w": 1280,
+    "h": 728,
+    "bytes_before": 117306,
+    "bytes_after": 113800
+  },
+  {
+    "file": "assets/tomodachi/tomo_about_4.webp",
+    "w": 1280,
+    "h": 728,
+    "bytes_before": 177462,
+    "bytes_after": 174308
+  },
+  {
+    "file": "assets/tomodachi/tomo_about_6.webp",
+    "w": 1280,
+    "h": 728,
+    "bytes_before": 153578,
+    "bytes_after": 148606
+  },
+  {
+    "file": "assets/tomodachi/tomo_bird.webp",
+    "w": 320,
+    "h": 306,
+    "bytes_before": 11966,
+    "bytes_after": 11896
+  },
+  {
+    "file": "assets/tomodachi/tomo_bowling.webp",
+    "w": 1250,
+    "h": 756,
+    "bytes_before": 83306,
+    "bytes_after": 82022
+  },
+  {
+    "file": "assets/tomodachi/tomo_daily_1.webp",
+    "w": 1400,
+    "h": 799,
+    "bytes_before": 118212,
+    "bytes_after": 117034
+  },
+  {
+    "file": "assets/tomodachi/tomo_daily_2.webp",
+    "w": 1400,
+    "h": 799,
+    "bytes_before": 155224,
+    "bytes_after": 150778
+  },
+  {
+    "file": "assets/tomodachi/tomo_daily_3.webp",
+    "w": 1400,
+    "h": 799,
+    "bytes_before": 69998,
+    "bytes_after": 67982
+  },
+  {
+    "file": "assets/tomodachi/tomo_ic_create.webp",
+    "w": 179,
+    "h": 136,
+    "bytes_before": 9724,
+    "bytes_after": 9534
+  },
+  {
+    "file": "assets/tomodachi/tomo_ic_enjoy.webp",
+    "w": 166,
+    "h": 134,
+    "bytes_before": 6552,
+    "bytes_after": 6450
+  },
+  {
+    "file": "assets/tomodachi/tomo_ic_item.webp",
+    "w": 202,
+    "h": 135,
+    "bytes_before": 11334,
+    "bytes_after": 11166
+  },
+  {
+    "file": "assets/tomodachi/tomo_ic_make.webp",
+    "w": 201,
+    "h": 160,
+    "bytes_before": 11160,
+    "bytes_after": 10972
+  },
+  {
+    "file": "assets/tomodachi/tomo_ic_rel.webp",
+    "w": 222,
+    "h": 156,
+    "bytes_before": 9716,
+    "bytes_after": 9566
+  },
+  {
+    "file": "assets/tomodachi/tomo_island_1.webp",
+    "w": 1400,
+    "h": 797,
+    "bytes_before": 181634,
+    "bytes_after": 170296
+  },
+  {
+    "file": "assets/tomodachi/tomo_island_2.webp",
+    "w": 1400,
+    "h": 797,
+    "bytes_before": 173680,
+    "bytes_after": 167040
+  },
+  {
+    "file": "assets/tomodachi/tomo_island_3.webp",
+    "w": 1400,
+    "h": 797,
+    "bytes_before": 110606,
+    "bytes_after": 105076
+  },
+  {
+    "file": "assets/tomodachi/tomo_island_4.webp",
+    "w": 1400,
+    "h": 797,
+    "bytes_before": 274078,
+    "bytes_after": 266722
+  },
+  {
+    "file": "assets/tomodachi/tomo_kv_1.webp",
+    "w": 1400,
+    "h": 927,
+    "bytes_before": 227294,
+    "bytes_after": 216126
+  },
+  {
+    "file": "assets/tomodachi/tomo_kv_2.webp",
+    "w": 1400,
+    "h": 838,
+    "bytes_before": 223908,
+    "bytes_after": 213598
+  },
+  {
+    "file": "assets/tomodachi/tomo_logo.webp",
+    "w": 953,
+    "h": 748,
+    "bytes_before": 65602,
+    "bytes_after": 64764
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_daily_1.webp",
+    "w": 340,
+    "h": 638,
+    "bytes_before": 19914,
+    "bytes_after": 19600
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_daily_2.webp",
+    "w": 572,
+    "h": 440,
+    "bytes_before": 22846,
+    "bytes_after": 22554
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_daily_3.webp",
+    "w": 512,
+    "h": 608,
+    "bytes_before": 25850,
+    "bytes_after": 25364
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_island_1.webp",
+    "w": 986,
+    "h": 651,
+    "bytes_before": 46724,
+    "bytes_after": 46208
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_island_2.webp",
+    "w": 369,
+    "h": 307,
+    "bytes_before": 19490,
+    "bytes_after": 19134
+  },
+  {
+    "file": "assets/tomodachi/tomo_obj_resident.webp",
+    "w": 685,
+    "h": 848,
+    "bytes_before": 40434,
+    "bytes_after": 40376
+  },
+  {
+    "file": "assets/tomodachi/tomo_pickup.webp",
+    "w": 1400,
+    "h": 787,
+    "bytes_before": 106514,
+    "bytes_after": 98506
+  },
+  {
+    "file": "assets/tomodachi/tomo_product.webp",
+    "w": 612,
+    "h": 612,
+    "bytes_before": 109864,
+    "bytes_after": 108488
+  },
+  {
+    "file": "assets/tomodachi/tomo_resident_1.webp",
+    "w": 1400,
+    "h": 794,
+    "bytes_before": 101978,
+    "bytes_after": 98984
+  },
+  {
+    "file": "assets/tomodachi/tomo_resident_2.webp",
+    "w": 1400,
+    "h": 794,
+    "bytes_before": 88938,
+    "bytes_after": 86436
+  },
+  {
+    "file": "assets/tomodachi/tomo_resident_3.webp",
+    "w": 1400,
+    "h": 794,
+    "bytes_before": 122004,
+    "bytes_after": 118510
+  },
+  {
+    "file": "assets/tomodachi/tomo_resident_4.webp",
+    "w": 1400,
+    "h": 794,
+    "bytes_before": 98652,
+    "bytes_after": 96222
+  },
+  {
+    "file": "assets/tomodachi/tomo_sticker_1.webp",
+    "w": 279,
+    "h": 306,
+    "bytes_before": 8220,
+    "bytes_after": 8136
+  },
+  {
+    "file": "assets/tomodachi/tomo_sticker_2.webp",
+    "w": 298,
+    "h": 333,
+    "bytes_before": 19490,
+    "bytes_after": 19292
+  },
+  {
+    "file": "assets/tomodachi/tomo_sticker_3.webp",
+    "w": 280,
+    "h": 351,
+    "bytes_before": 8814,
+    "bytes_after": 8722
+  },
+  {
+    "file": "assets/tomodachi/tomo_sticker_4.webp",
+    "w": 386,
+    "h": 441,
+    "bytes_before": 16918,
+    "bytes_after": 16736
+  },
+  {
+    "file": "assets/ui/aya_avatar.webp",
+    "w": 453,
+    "h": 453,
+    "bytes_before": 5562,
+    "bytes_after": 5326
+  },
+  {
+    "file": "assets/ui/aya_nameplate.webp",
+    "w": 450,
+    "h": 450,
+    "bytes_before": 33882,
+    "bytes_after": 32980
+  },
+  {
+    "file": "assets/ui/aya_space_l.webp",
+    "w": 900,
+    "h": 140,
+    "bytes_before": 28040,
+    "bytes_after": 27126
+  },
+  {
+    "file": "assets/ui/aya_space_s.webp",
+    "w": 374,
+    "h": 120,
+    "bytes_before": 14194,
+    "bytes_after": 13682
+  }
+]

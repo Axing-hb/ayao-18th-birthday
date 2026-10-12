@@ -1,0 +1,51 @@
+# ============================================================
+# 阿药生日网页 · GitHub Pages 部署忽略规则
+# 仓库根 = ayao-birthday/
+# ============================================================
+
+# ---- 原始素材备份：34 MB，网页用不到，不要上传 ----
+# 网页实际只引用 assets/<group>/*.webp；
+# _raw/ 里是未压缩的原始文件 + 私人照片原图 + 音频原文件
+assets/_raw/
+
+# ---- Google Fonts 的外链参考 CSS（网页用本地 woff2，不需要这些）----
+assets/fonts/*.css
+
+# ---- 私人照片 / 音频的原始格式兜底 ----
+# assets/ 下网页实际用的都是 .webp，所以排除 .jpg/.jpeg 是安全的
+assets/**/*.jpg
+assets/**/*.jpeg
+# 若将来某个素材必须是 jpg，在下面加例外（注意顺序，例外要写在排除之后）：
+# !assets/xxx/keep-me.jpg
+
+# ---- 临时文件 / 脚本产物 ----
+*.tmp
+*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- 系统文件 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 编辑器 / IDE ----
+.vscode/
+.idea/
+*.swp
+*~
+
+# ============================================================
+# 会保留上传的内容：
+#   index.html                 入口（自动跳转到 web/）
+#   web/index.html             GPT 产出的网页主体
+#   assets/personal/           私人照片（9 个 webp）
+#   assets/audio/              背景音乐
+#   assets/maimai|acnh|pokemon|tomodachi|marettu|ui|deco|fonts/
+#   assets/manifest.json       素材清单
+#   assets/_preview.html       素材总览页
+#   docs/                      规划与提示词
+#   ref/                       可复现的构建脚本
+# ============================================================
